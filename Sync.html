@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SyncStream - Watch Together</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-gradient"></div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Watch movies <span class="highlight">together</span>, even when apart</h1>
+            <p>SyncStream lets you sync up movies with friends and chat in real time, no matter where you are.</p>
+            
+            <div class="join-form">
+              <input type="text" placeholder="Enter your name" class="name-input">
+              <button class="create-btn">
+                <i class="fas fa-film"></i> Create Watch Party
+              </button>
+            </div>
+          </div>
+          
+          <div class="preview-card">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="video-container">
+                <video autoplay muted loop>
+                  <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <div class="video-controls">
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <span>Now playing...</span>
+                    
+                    <div class="users-watching">
+                      <div class="avatar" style="background-color: #4f46e5;">A</div>
+                      <div class="avatar" style="background-color: #10b981;">B</div>
+                      <div class="avatar" style="background-color: #f59e0b;">C</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="chat-preview">
+                <div class="chat-header">
+                  <i class="fas fa-comment"></i>
+                  <h3>Chat</h3>
+                </div>
+                <div class="messages">
+                  <div class="message">
+                    <div class="avatar" style="background-color: #4f46e5;">A</div>
+                    <div class="message-content">This scene is amazing! 😍</div>
+                  </div>
+                  <div class="message">
+                    <div class="avatar" style="background-color: #10b981;">B</div>
+                    <div class="message-content">I know right? The graphics are incredible</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- OTT Apps Showcase Section -->
+    <div class="ott-showcase">
+      <div class="container">
+        <h2>Supported Streaming Platforms</h2>
+        <p class="section-description">Watch together with friends across all your favorite streaming services</p>
+        
+        <div class="ott-carousel">
+          <button class="carousel-control prev-btn"><i class="fas fa-chevron-left"></i></button>
+          
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <!-- Netflix -->
+              <div class="ott-card">
+                <div class="ott-logo" style="background-color: rgba(229, 9, 20, 0.1);">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix">
+                </div>
+                <div class="ott-details">
+                  <h3>Netflix</h3>
+                  <p>Movies, TV shows, and originals</p>
+                  <button>Connect Account</button>
+                </div>
+              </div>
+              
+              <!-- Disney+ -->
+              <div class="ott-card">
+                <div class="ott-logo" style="background-color: rgba(0, 99, 229, 0.1);">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney+">
+                </div>
+                <div class="ott-details">
+                  <h3>Disney+</h3>
+                  <p>Family-friendly movies and shows</p>
+                  <button>Connect Account</button>
+                </div>
+              </div>
+              
+              <!-- Prime Video -->
+              <div class="ott-card">
+                <div class="ott-logo" style="background-color: rgba(0, 168, 225, 0.1);">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png" alt="Prime Video">
+                </div>
+                <div class="ott-details">
+                  <h3>Prime Video</h3>
+                  <p>Movies, TV shows, and exclusives</p>
+                  <button>Connect Account</button>
+                </div>
+              </div>
+              
+              <!-- Hulu -->
+              <div class="ott-card">
+                <div class="ott-logo" style="background-color: rgba(28, 231, 131, 0.1);">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Hulu_Logo.svg" alt="Hulu">
+                </div>
+                <div class="ott-details">
+                  <h3>Hulu</h3>
+                  <p>TV shows, movies, and originals</p>
+                  <button>Connect Account</button>
+                </div>
+              </div>
+              
+              <!-- HBO Max -->
+              <div class="ott-card">
+                <div class="ott-logo" style="background-color: rgba(88, 34, 180, 0.1);">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg" alt="HBO Max">
+                </div>
+                <div class="ott-details">
+                  <h3>HBO Max</h3>
+                  <p>Premium content and exclusives</p>
+                  <button>Connect Account</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="carousel-control next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Subscription Plans Section -->
+    <div class="subscription-plans">
+      <div class="container">
+        <h2>Choose Your Plan</h2>
+        <p class="section-description">Select the perfect subscription that fits your viewing habits and social needs</p>
+        
+        <div class="plans-container">
+          <!-- Basic Plan -->
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Basic</h3>
+              <div class="plan-price">
+                <span class="price">$5.99</span>
+                <span class="period">/month</span>
+              </div>
+              <p>Perfect for solo viewers</p>
+            </div>
+            
+            <div class="plan-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Watch with 1 friend</li>
+                <li><i class="fas fa-check"></i> HD streaming</li>
+                <li><i class="fas fa-check"></i> Chat functionality</li>
+                <li><i class="fas fa-check"></i> Access to 3 OTT platforms</li>
+              </ul>
+              
+              <button class="plan-btn basic">Start Basic</button>
+            </div>
+          </div>
+          
+          <!-- Premium Plan -->
+          <div class="plan-card highlighted">
+            <div class="plan-header premium">
+              <h3>Premium</h3>
+              <div class="plan-price">
+                <span class="price">$9.99</span>
+                <span class="period">/month</span>
+              </div>
+              <p>Best for small groups</p>
+            </div>
+            
+            <div class="plan-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Watch with up to 5 friends</li>
+                <li><i class="fas fa-check"></i> Full HD streaming</li>
+                <li><i class="fas fa-check"></i> Chat and voice call</li>
+                <li><i class="fas fa-check"></i> Access to all OTT platforms</li>
+                <li><i class="fas fa-check"></i> No ads</li>
+              </ul>
+              
+              <button class="plan-btn premium">Get Premium</button>
+            </div>
+          </div>
+          
+          <!-- Family Plan -->
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Family</h3>
+              <div class="plan-price">
+                <span class="price">$14.99</span>
+                <span class="period">/month</span>
+              </div>
+              <p>Perfect for families</p>
+            </div>
+            
+            <div class="plan-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Watch with unlimited friends</li>
+                <li><i class="fas fa-check"></i> 4K streaming where available</li>
+                <li><i class="fas fa-check"></i> Chat, voice & video calls</li>
+                <li><i class="fas fa-check"></i> Access to all OTT platforms</li>
+                <li><i class="fas fa-check"></i> No ads</li>
+                <li><i class="fas fa-check"></i> Multiple simultaneous rooms</li>
+              </ul>
+              
+              <button class="plan-btn basic">Choose Family</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Features Section -->
+    <div class="features">
+      <div class="container">
+        <h2>Experience a whole new way to watch together</h2>
+        
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-play"></i>
+            </div>
+            <h3>Synchronized Playback</h3>
+            <p>Watch content in perfect sync with all your friends, with automatic video synchronization.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-comment"></i>
+            </div>
+            <h3>Real-time Chat</h3>
+            <p>Share reactions, jokes, and thoughts with your friends as you watch together.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Watch with Friends</h3>
+            <p>Invite unlimited friends to join your watch party with a simple shareable link.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to start watching together?</h2>
+          <p>Creating a watch party takes just seconds. No account required.</p>
+          <button class="cta-btn">
+            <i class="fas fa-film"></i> Create Your Watch Party
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo">
+            <i class="fas fa-film"></i>
+            <span>Reel-Time Vibes</span>
+          </div>
+          <p>&copy; <span id="current-year"></span> Reel-Time Vibes. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Simple JavaScript to set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Add click handler for buttons
+    document.querySelector('.create-btn').addEventListener('click', function() {
+      alert('Watch party feature would be created here!');
+    });
+    
+    document.querySelector('.cta-btn').addEventListener('click', function() {
+      document.querySelector('.name-input').focus();
+    });
+    
+    // OTT Apps Carousel functionality
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.next-btn');
+    const prevButton = document.querySelector('.prev-btn');
+    const dotsNav = document.querySelector('.carousel-dots');
+    const dots = Array.from(dotsNav.children);
+    
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    
+    // Arrange the slides next to one another
+    const setSlidePosition = (slide, index) => {
+      slide.style.left = slideWidth * index + 'px';
+    };
+    slides.forEach(setSlidePosition);
+    
+    const moveToSlide = (track, currentSlide, targetSlide) => {
+      track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+      currentSlide.classList.remove('active');
+      targetSlide.classList.add('active');
+    };
+    
+    const updateDots = (currentDot, targetDot) => {
+      currentDot.classList.remove('active');
+      targetDot.classList.add('active');
+    };
+    
+    // When I click left, move slides to the left
+    prevButton.addEventListener('click', e => {
+      const currentSlide = track.querySelector('.active');
+      const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
+      const currentDot = dotsNav.querySelector('.active');
+      const prevDot = currentDot.previousElementSibling || dots[dots.length - 1];
+      
+      moveToSlide(track, currentSlide, prevSlide);
+      updateDots(currentDot, prevDot);
+    });
+    
+    // When I click right, move slides to the right
+    nextButton.addEventListener('click', e => {
+      const currentSlide = track.querySelector('.active');
+      const nextSlide = currentSlide.nextElementSibling || slides[0];
+      const currentDot = dotsNav.querySelector('.active');
+      const nextDot = currentDot.nextElementSibling || dots[0];
+      
+      moveToSlide(track, currentSlide, nextSlide);
+      updateDots(currentDot, nextDot);
+    });
+    
+    // When I click the nav indicators, move to that slide
+    dotsNav.addEventListener('click', e => {
+      const targetDot = e.target.closest('span');
+      
+      if (!targetDot) return;
+      
+      const currentSlide = track.querySelector('.active');
+      const currentDot = dotsNav.querySelector('.active');
+      const targetIndex = dots.findIndex(dot => dot === targetDot);
+      const targetSlide = slides[targetIndex];
+      
+      moveToSlide(track, currentSlide, targetSlide);
+      updateDots(currentDot, targetDot);
+    });
+    
+    // Auto slide change
+    setInterval(() => {
+      const currentSlide = track.querySelector('.active');
+      const nextSlide = currentSlide.nextElementSibling || slides[0];
+      const currentDot = dotsNav.querySelector('.active');
+      const nextDot = currentDot.nextElementSibling || dots[0];
+      
+      moveToSlide(track, currentSlide, nextSlide);
+      updateDots(currentDot, nextDot);
+    }, 5000);
+  </script>
+</body>
+</html>
